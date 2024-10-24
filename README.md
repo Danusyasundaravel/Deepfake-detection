@@ -4,7 +4,7 @@ Deepfakes are manipulated videos where the faces of people are replaced with com
 ## Three models are utilized in this project:
 
 2D CNN: Analyzes individual video frames.
-3D CNN + LSTM: Captures both spatial and temporal patterns from sequences of frames.
+3D CNN : Captures both spatial and temporal patterns from sequences of frames.
 EfficientNet: A state-of-the-art image classification model that efficiently balances accuracy and performance.
 ## Dataset
 The dataset used for this project is organized into two categories:
@@ -17,7 +17,7 @@ Each video is pre-processed by extracting frames and resizing them for input int
 ### 2D CNN
 This model processes individual frames of a video to detect deepfakes by analyzing spatial features. It's suitable for image-level classification but does not take into account the temporal relationship between frames.
 
-### 3D CNN + LSTM
+### 3D CNN
 Combines 3D CNNs for spatial feature extraction across multiple frames and LSTMs to learn temporal patterns, which is crucial for videos. This model can capture subtle temporal manipulations in videos.
 
 ### EfficientNet
